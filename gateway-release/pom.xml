@@ -457,14 +457,14 @@
 
     <repositories>
 
-<!--        <repository>-->
-<!--            <id>flipkart-release</id>-->
-<!--            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release/</url>-->
-<!--        </repository>-->
-<!--        <repository>-->
-<!--            <id>flipkart-snapshot</id>-->
-<!--            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-snapshot/</url>-->
-<!--        </repository>-->
+        <repository>
+            <id>flipkart-release</id>
+            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release/</url>
+        </repository>
+        <repository>
+            <id>flipkart-snapshot</id>
+            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-snapshot/</url>
+        </repository>
         <repository>
             <id>sonatype release</id>
             <url>https://oss.sonatype.org/content/repositories/releases/</url>
@@ -473,10 +473,10 @@
             <id>cloudera</id>
             <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
         </repository>
-<!--        <repository>-->
-<!--            <id>flipkart-release-local</id>-->
-<!--            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local/</url>-->
-<!--        </repository>-->
+        <repository>
+            <id>flipkart-release-local</id>
+            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local/</url>
+        </repository>
         <repository>
             <id>clojars.org</id>
             <url>http://clojars.org/repo</url>
@@ -493,5 +493,18 @@
         </repository>
 
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>fk-art-snapshot</id>
+            <name>Flipkart-Artifactory</name>
+            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-snapshots-local</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>fk-art-release</id>
+            <name>Flipkart-Artifactory</name>
+            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local</url>
+        </pluginRepository>
+    </pluginRepositories>
 
 </project>
