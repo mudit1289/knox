@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#! /bin/bash
+
+set -ex
 
 function die()
 {

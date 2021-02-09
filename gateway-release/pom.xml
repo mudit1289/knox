@@ -454,4 +454,44 @@
             <artifactId>gateway-service-session</artifactId>
         </dependency>
     </dependencies>
+
+    <repositories>
+
+        <repository>
+            <id>flipkart-release</id>
+            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release/</url>
+        </repository>
+        <repository>
+            <id>flipkart-snapshot</id>
+            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-snapshot/</url>
+        </repository>
+        <repository>
+            <id>sonatype release</id>
+            <url>https://oss.sonatype.org/content/repositories/releases/</url>
+        </repository>
+        <repository>
+            <id>cloudera</id>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+        </repository>
+        <repository>
+            <id>flipkart-release-local</id>
+            <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local/</url>
+        </repository>
+        <repository>
+            <id>clojars.org</id>
+            <url>http://clojars.org/repo</url>
+        </repository>
+        <repository>
+            <id>maven</id>
+            <url>https://repo1.maven.org/maven2</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+
+    </repositories>
+
 </project>
