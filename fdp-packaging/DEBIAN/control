@@ -1,0 +1,7 @@
+Package: __PACKAGE__
+Version: __VERSION__
+Architecture: all
+Maintainer: SCO Team (fdp-sco-oncall@flipkart.com)
+Depends: oracle-java8-jdk,fk-ops-servicebuilder,fk-config-service-confd,cosmos-collectd,cosmos-jmx,stream-relay,fk-3p-hosts-populator,fk-nsca-wrapper
+Section: flipkart/fdp
+Description: FDP Knox __MODULE__ package

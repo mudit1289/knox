@@ -1,0 +1,14 @@
+#! /bin/bash
+
+set -x
+
+PACKAGE=__PACKAGE__
+
+CMD="$1"
+
+if [ "$CMD" == "remove" -o "$CMD" == "upgrade" ]; then
+    echo "Stopping $PACKAGE"
+    /etc/init.d/$PACKAGE stop
+    rm -rf /etc/init.d/$PACKAGE
+    rm -rf /usr/share/$PACKAGE
+fi

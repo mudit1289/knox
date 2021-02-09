@@ -23,8 +23,8 @@
 
 # /etc/init.d/knox
 
-KNOX_HOME="/usr/hdp/current/knox-server"
-KNOX_USER="knox"
+KNOX_HOME=__KNOX_HOME__
+KNOX_USER=__KNOX_USER__
 
 # if the executables do not exist -- display error
 

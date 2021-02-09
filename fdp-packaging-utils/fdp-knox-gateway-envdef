@@ -1,0 +1,47 @@
+[
+    {
+       "repoName": "__ENV__-__PACKAGE__",
+       "repoVersion": __REPO_VERSION__,
+       "repoReferenceType": "EXACT"
+    },
+    {
+        "repoName": "cosmos-debian-stretch-prod",
+        "repoVersion": 11,
+        "repoReferenceType": "EXACT"
+    },
+    {
+        "repoName": "mysql-connector-java",
+        "repoVersion": 1,
+        "repoReferenceType": "EXACT"
+    },
+    {
+        "repoName": "logsvc-debian-stretch-prod",
+        "repoVersion": 74,
+        "repoReferenceType": "EXACT"
+    },
+    {
+        "repoName": "fk-config-service-confd",
+        "repoVersion": 71,
+        "repoReferenceType": "EXACT"
+    },
+    {
+        "repoName": "oracle_java8-debian-stretch-prod",
+        "repoVersion": 1,
+        "repoReferenceType": "EXACT"
+    },
+    {
+        "repoName": "fk-3p-hosts-populator",
+        "repoVersion": 19,
+        "repoReferenceType": "EXACT"
+    },
+    {
+        "repoName": "fk-ops-servicebuilder",
+        "repoVersion": 3,
+        "repoReferenceType": "EXACT"
+    },
+    {
+        "repoName": "alertz-stretch-nagios-prod",
+        "repoVersion": 7,
+        "repoReferenceType": "EXACT"
+    }
+]

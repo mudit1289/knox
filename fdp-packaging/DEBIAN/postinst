@@ -1,0 +1,18 @@
+#! /bin/bash -ex
+
+PACKAGE=__PACKAGE__
+
+if [ "${1}" == "configure" ] ; then
+
+    echo "Setting Up required Directories & Permissions"
+
+    sudo mkdir -p /usr/share/${PACKAGE}
+    sudo mkdir -p /usr/lib/${PACKAGE}
+    sudo chmod -R 777 /usr/share/${PACKAGE}
+    sudo chmod -R 777 /usr/lib/${PACKAGE}
+
+    cd /usr/share/${PACKAGE}
+    sudo unzip knox-1.5.0.zip
+    sudo chmod -R 777 health_check.sh
+
+fi
