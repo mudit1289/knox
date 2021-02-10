@@ -30,8 +30,8 @@ DEB_DIR="${LOCAL_DIR}"/packaging
 mkdir -p "${DEB_DIR}"/usr/share/${PACKAGE}
 mkdir -p "${DEB_DIR}"/usr/lib/${PACKAGE}
 
-echo "BUILDING ${PACKAGE}"
-mvn -Ppackage,release -Drat.ignoreErrors=true -DskipTests clean package
+echo "BUILDING ${PACKAGE}. Module ${MODULE}"
+mvn -Ppackage,release -Drat.ignoreErrors=true -DskipTests -pl ${MODULE} clean package
 
 echo "Copying zip"
 
