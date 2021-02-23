@@ -299,12 +299,40 @@
             <properties>
                 <failsafe.group>org.apache.knox.test.category.VerifyTest</failsafe.group>
             </properties>
+            <repositories>
+                <repository>
+                    <id>fk-art-snapshot</id>
+
+                    <name>Flipkart-Artifactory</name>
+                    <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-snapshots-local</url>
+                </repository>
+                <repository>
+                    <id>fk-art-release</id>
+
+                    <name>Flipkart-Artifactory</name>
+                    <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local</url>
+                </repository>
+            </repositories>
         </profile>
         <profile>
             <id>release</id>
             <properties>
                 <failsafe.group>org.apache.knox.test.category.VerifyTest,org.apache.knox.test.category.ReleaseTest</failsafe.group>
             </properties>
+            <repositories>
+                <repository>
+                    <id>fk-art-snapshot</id>
+
+                    <name>Flipkart-Artifactory</name>
+                    <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-snapshots-local</url>
+                </repository>
+                <repository>
+                    <id>fk-art-release</id>
+
+                    <name>Flipkart-Artifactory</name>
+                    <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local</url>
+                </repository>
+            </repositories>
         </profile>
         <profile>
             <id>dev</id>
@@ -324,25 +352,37 @@
             -->
             <repositories>
                 <repository>
-                    <id>jboss-puplic</id>
-                    <url>https://repository.jboss.org/nexus/content/repositories/public</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
+                    <id>fk-art-snapshot</id>
+
+                    <name>Flipkart-Artifactory</name>
+                    <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-snapshots-local</url>
                 </repository>
                 <repository>
-                    <id>shib-release</id>
-                    <url>https://build.shibboleth.net/nexus/content/groups/public</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
+                    <id>fk-art-release</id>
+
+                    <name>Flipkart-Artifactory</name>
+                    <url>http://artifactory.fkinternal.com/artifactory/v1.0/artifacts/libs-release-local</url>
                 </repository>
+<!--                <repository>-->
+<!--                    <id>jboss-puplic</id>-->
+<!--                    <url>https://repository.jboss.org/nexus/content/repositories/public</url>-->
+<!--                    <snapshots>-->
+<!--                        <enabled>false</enabled>-->
+<!--                    </snapshots>-->
+<!--                    <releases>-->
+<!--                        <enabled>true</enabled>-->
+<!--                    </releases>-->
+<!--                </repository>-->
+<!--                <repository>-->
+<!--                    <id>shib-release</id>-->
+<!--                    <url>https://build.shibboleth.net/nexus/content/groups/public</url>-->
+<!--                    <snapshots>-->
+<!--                        <enabled>false</enabled>-->
+<!--                    </snapshots>-->
+<!--                    <releases>-->
+<!--                        <enabled>true</enabled>-->
+<!--                    </releases>-->
+<!--                </repository>-->
             </repositories>
             <build>
                 <plugins>
